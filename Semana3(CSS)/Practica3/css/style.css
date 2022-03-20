@@ -1,0 +1,489 @@
+:root{ /*Variables globales*/
+    --FondoColor: blue;
+    --FuentePrincipal: 'Open Sans', 'sans-serif';
+}
+
+/*globales*/ /*importante*/
+html{
+    box-sizing: border-box; /*Emparejar la caja y no se deforme*/
+    font-size: 62.5%; /*1 rem = 10px*/ /*Aplicar siempre*/
+}
+
+*,*::before,*::after { /*Modificaciones antes de una propiedad o después, responsive*/
+    box-sizing: inherit; /*Modificar tamño de componentes respescto al tamaño de la pantalla*/ /*Metodologia demb*/
+}
+
+.logotipo{
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-left: 10rem;
+}
+
+.textoPrincipal{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+body{
+    font-family: var(--FuentePrincipal);
+}
+
+.sinMargen{
+    margin: 0;
+}
+
+/*Header*/
+.header{
+    background: rgb(249,255,255);
+    background: linear-gradient(90deg, rgba(249,255,255,1) 44%, rgba(54,153,212,0.35057773109243695) 100%);
+    padding: 6rem;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacion{
+    display: flex;
+    gap: 5rem;
+    font-size: 2.7rem;
+    margin-right: 20rem;
+}
+
+.enlaceNavegacion{
+    text-decoration: none;
+    color: black;
+    opacity: .7;
+    font-weight: bold;
+}
+
+.boton1{
+    background-color: #2d4dcb;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: -2rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    width: 20rem;
+    -webkit-box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.fondoAzul{
+    background-color: #1d71af;
+    background-position: right;
+    background: rgb(249,255,255);
+    background: linear-gradient(90deg, rgba(249,255,255,1) 50%, rgba(54,153,212,0.9976365546218487) 50%);
+    text-align: right;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    height: 100rem;
+}
+
+.fight{
+    display: flex;
+    margin: -80rem 0rem 0rem 20rem;
+    color: #1f3e72;
+    font-size: 10rem;
+    width: 80rem;
+}
+
+.texto1{
+    text-align: justify;
+    font-size: 2rem;
+    width: 45rem;
+    margin-left: 20rem;
+    opacity: .7;
+}
+
+.proteccion{
+    display: flex;
+    margin-left: 20rem;
+    margin-top: 5rem;
+    gap: 2rem;
+    font-size: 2rem;
+    color: #1f3e72;
+    font-weight: 100;
+}
+
+.selected{
+    display: flex;
+    margin: -5rem 0rem 10rem 55rem;
+    gap: 2rem;
+    font-size: 2rem;
+    color: #1f3e72;
+}
+
+.schedule{
+    display: flex;
+    margin: 0rem 0rem 0rem 20rem;
+    gap: 1rem;
+    font-size: 2.3rem;
+    text-align: center;
+    color: #1f3e72;
+}
+
+.blanco{
+    background-color: white;
+    position: absolute;
+    width: 145rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+}
+
+.cuadrado{
+    display: flex;
+    margin: 1rem 0rem 0rem 10rem;
+    padding-left: 5rem;
+    gap: 15rem;
+    font-size: 2.3rem;
+    opacity: .65;
+}
+
+.cuadrado2{
+    display: flex;
+    margin: -5rem 0rem 0rem 10rem;
+    padding-left: 10rem;
+    gap: 12rem;
+    font-size: 2.3rem;
+    color: #1f3e72;
+}
+
+.boton2{
+    background-color: #2d4dcb;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 20rem;
+    margin: -80rem 0rem 2rem 100rem;
+    padding: 2rem 0rem;
+    font-size: 3rem;
+    text-align: center;
+    -webkit-box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 26px 37px -9px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+}
+
+.marcas{
+    display: flex;
+    margin: 35rem 0rem 0rem 20rem;
+    gap: 15rem;
+    opacity: .5;
+}
+
+.why{
+    display: flex;
+    margin: 17rem 0rem 0rem 20rem;
+    color: #1f3e72;
+    font-size: 7.5rem;
+}
+
+.texto2{
+    font-size: 3rem;
+    width: 90rem;
+    margin: 4rem 0rem 0rem 20rem;
+    opacity: .7;
+}
+
+.iconos{
+    display: flex;
+    margin: 5rem 0rem 0rem 22rem;
+    gap: 15rem;
+    width: 30rem;
+    position: absolute;
+}
+
+.cuadrado3{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    gap: 2.5rem;
+    padding: 2.4rem;
+    border-color: #f9f9fe;
+    border-radius: 2rem;
+    border-width: 1rem;
+    height: 35rem;
+}
+
+.cuadrado4{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0px 36px 187px -30px rgba(0,0,0,0.75);
+    margin-left: -5rem;
+    padding: 2.4rem;
+}
+
+.texto3{
+    font-size: 2.5rem;
+    color: #1f3e72;
+    width: 25rem;
+    margin-top: -1rem;
+    word-spacing: 1rem;
+}
+
+.texto4{
+    font-size: 1.5rem;
+    margin-top: -2.2rem;
+    opacity: .7;
+    line-height: 2.8rem;
+    word-spacing: .5rem;
+}
+
+.preparaciones{
+    font-size: 6rem;
+    color: #1f3e72;
+    text-align: right;
+    margin: 70rem 8rem 0rem 0rem;
+}
+
+.texto5{
+    font-size: 3rem;
+    text-align: left;
+    margin: 2rem 7rem 0 0;
+    width: 78rem;
+    margin: 4rem 0rem 0rem 95rem;
+    line-height: 4.2rem;
+}
+
+.chica{
+    margin-top: -40rem;
+    display: flex;
+    width: 85rem;
+    height: 130rem;
+}
+
+.shield{
+    position: absolute;
+    display: flex;
+    margin: -7.5rem 0rem 0rem 100rem;
+}
+
+.texto6{
+    font-size: 3.5rem;
+    margin: -70rem 0rem 0 88rem;
+    color: #1f3e72;
+}
+
+select{
+    appearance: none;
+    outline: 0;
+    border-color: #f9f9fe;
+    border-width: .5rem;
+    background-image: none;
+    color: #1f3e72;
+    margin-left: 10rem;
+    font-weight: bold;
+}
+
+.select{
+    position: relative;
+    display: flex;
+    width: 90rem;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+select{
+    flex: 1;
+    padding: 0 .5em;
+    cursor: pointer;
+    padding-left: 9rem;
+}
+
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+}
+
+.stress{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 4rem 0rem 0rem 2rem;
+}
+
+.texto7{
+    display: flex;
+    font-size: 3.5rem;
+    color: #1f3e72;
+    margin: 5rem 0 0 10rem;
+    font-weight: bold;
+}
+
+.texto8{
+    position: absolute;
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 2rem 7rem 0 0;
+    width: 55rem;
+    margin: 9rem 0rem 0rem 10rem;
+    line-height: 4.2rem;
+    opacity: .7;
+}
+
+.cuadradoStress{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 21px 1px rgba(0,0,0,0.25);
+    margin: 4rem 12rem 0rem 98.5rem;
+    height: 30rem;
+}
+
+.llamada{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #1f3e72;
+    margin: -10rem 0 0 10rem;
+    width: 25rem;
+}
+
+.cuadrado5{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    gap: 2.5rem;
+    padding: 2.4rem;
+    border-color: #f9f9fe;
+    border-radius: 2rem;
+    border-width: .5rem;
+    height: 28rem;
+    width: 85rem;
+    margin-top: 5rem;
+}
+
+.ip{
+    font-size: 1.5rem;
+    margin: -1.5rem 0 0 10rem;
+    opacity: .7;
+    line-height: 2.8rem;
+    word-spacing: .5rem;
+}
+
+.boton3{
+    background-color: #f1f5ff;
+    text-decoration: none;
+    color: #1f3e72;
+    display: inline-block;
+    width: 25rem;
+    margin: 3rem 0rem 0rem 5rem;
+    padding: 2rem 0rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.cuadrado6{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 21px 1px rgba(0,0,0,0.25);
+    margin: 5rem 0rem 0rem -8rem;
+    height: 28rem;
+    padding: 2.2rem;
+}
+
+.boton4{
+    background-color: #2d4dcb;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 20rem;
+    margin: 4.2rem 0rem 0rem 10rem;
+    padding: 2rem 0rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 21px 1px rgba(0,0,0,0.40);
+}
+
+.doctor{
+    display: flex;
+    margin: -35rem 0 0 103rem;
+    height: 109rem;
+}
+
+.vacunacion{
+    font-size: 4rem;
+    color: #1f3e72;
+    margin: 15rem 0 0 23rem;
+    padding-top: 4rem;
+}
+
+.fondoFinal{
+    background-color: #f1f5ff;
+    display: flex;
+    margin-top: 15rem;
+}
+
+.texto9{
+    font-size: 2rem;
+    opacity: .5;
+    margin: 3rem 0 0 24rem;
+    width: 22rem;
+    line-height: 2.95rem;
+    font-weight: bold;
+}
+
+.texto10{
+    font-size: 3rem;
+    color: #1f3e72;
+    margin: 15rem 0 0 23rem;
+    padding-top: 4rem;
+}
+
+.texto11{
+    display: flex;
+    font-size: 2rem;
+    opacity: .5;
+    margin: 4rem 0 0 65.5rem;
+    width: 15rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.texto12{
+    display: flex;
+    font-size: 2rem;
+    opacity: .5;
+    margin: 4rem 0 0 1rem;
+    width: 15rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.texto13{
+    font-size: 2rem;
+    opacity: .5;
+    font-weight: bold;
+    margin: 50rem 0rem 0 -155rem;
+    padding-bottom: 5rem;
+}
+
+.texto14{
+    font-size: 2rem;
+    opacity: .5;
+    margin: 45rem 0 0 -35rem;
+    font-weight: bold;
+    text-decoration: none;
+    gap: 5rem;
+}
